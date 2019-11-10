@@ -82,3 +82,37 @@
 #### UML
 
 <img src="UML/iteracion2.png"> 
+
+## ITERACIÓN 3
+
+#### ADD-05:
+
+| Short title of decision  | Sistema de videovigilancia |
+| ------------- | ------------- |
+| ID |  ADD-05 |
+| Date | 22/10/2019 |
+| Creator of the decision | Borja Castro, Deborah Villanueva |
+| Status | Accepted |
+| Requirements (decision drivers)  | RF004 Video-vigilancia |
+| Pros Opciones | - Control visual de los activos<br>- Incremento de seguridad en las instalaciones |
+| Cons Opciones | - Pueden ser hackeadas<br>- Posible robo de privacidad<br>- Mantenimiento económicamente elevado |
+
+#### ADD-06:
+
+| Short title of decision  | |
+| ------------- | ------------- |
+| ID |  ADD-06 |
+| Date |  |
+| Creator of the decision | Borja Castro, Deborah Villanueva |
+| Status | Accepted |
+| Requirements (decision drivers)  |  |
+| Decision outcome (options selected)  |  |
+| Pros Opciones |  |
+| Cons Opciones |  |
+| Link to other decisions |  |
+| Link to architecture artifacts |  |
+
+#### UML
+
+<img src="UML/iteracion3.png">
+
