@@ -134,3 +134,56 @@
 #### UML
 
 <img src="UML/iteracion4.png">
+
+## ITERACIÓN 5
+
+#### ADD-08:
+
+| Short title of decision  | Cifrado propio de comunicación  |
+| ------------- | ------------- |
+| ID |  ADD-08 |
+| Date | 23/10/19 |
+| Creator of the decision | Borja Castro, Deborah Villanueva |
+| Status | Accepted |
+| Requirements (decision drivers)  | - RF010 Comunicación cifrada |
+| Alternative decisions (options) | Encriptación de terceros |
+| Decision outcome (options selected)  | Cifrado propio de comunicación |
+| Pros Opciones | Cifrado propio de comunicación<br>- Comunicación adaptada a organismos de defensa<br>- Privacidad gubernamental<br>- Seguridad de mensajes privados<br><br>Encriptación de terceros<br>- Uso de claves ya proporcionadas<br>- Más económico |
+| Cons Opciones | Cifrado propio de comunicación<br>- Actualización constante en el código de <br>encriptación<br>- Crear el propio algoritmo de cifrado y la clave<br> correspondiente para descifrarlo<br>- Personal especializado<br><br>Encriptación de terceros<br>- Poca seguridad debido a la clave compartida |
+| Link to other decisions | ADD00, ADD06, ADD03 |
+| Link to architecture artifacts | UML iteración 5 (Sistema de Gestión)  |
+
+#### ADD-09:
+
+| Short title of decision  | Traductor de terceros |
+| ------------- | ------------- |
+| ID |  ADD-09 |
+| Date | 29/10/19 |
+| Creator of the decision | Borja Castro, Deborah Villanueva |
+| Status | Accepted |
+| Requirements (decision drivers)  | - RF011. Traducción |
+| Alternative decisions (options) | Traductor de terceros terceros |
+| Decision outcome (options selected)  | Traductor de terceros terceros |
+| Pros Opciones | Traductor propio:<br>- Comunicación internacional<br>- Traducción precisa a profesionales en<br> lengua materna<br>- Aprendizaje de termionología <br>especialista(tecnicismos)<br><br>Traductor de terceros:<br>- Mas barato |
+| Cons Opciones | Traductor propio:<br>- Posible pérdida de información<br>- Posible malinterpretación<br><br>Traductor de terceros:<br>- Difícil modificación |
+| Link to other decisions | ADD00, ADD03, ADD10 |
+| Link to architecture artifacts | UML iteración 5 (Sistema de Gestión)|
+
+#### ADD-10:
+
+| Short title of decision  | Subscripción de usuario |
+| ------------- | ------------- |
+| ID |  ADD-10 |
+| Date | 29/10/19 |
+| Creator of the decision | Borja Castro, Deborah Villanueva |
+| Status | Accepted |
+| Requirements (decision drivers)  | - RF012 Subscripción<br>- RF012.1Actualización de información |
+| Pros Opciones | - Distribución de información a los usuarios<br>- Información actualizada en tiempo real<br>- Fácil, simple ordenado<br>- Accesible  |
+| Cons Opciones | - Dependencia de la conexión a internet<br>- Personal técnico encargado de la elaboración de las noticias |
+| Link to other decisions | ADD00, ADD ADD05, ADD06,ADD09 |
+| Link to architecture artifacts | UML iteración 5 (Sistema de Gestión) |
+
+
+#### UML
+
+<img src="UML/iteracion5.png">
