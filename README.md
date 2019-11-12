@@ -1,3 +1,39 @@
+## TABLA DE TIEMPOS
+
+|Week|Iteration|Time in ADD<br>(ASS) |Reflection<br>Time<br>(ASS-ASC)|Time in refined<br> ADD<br>(ASS)|Design ADD<br> Time<br>(ASJ) |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |
+|1|1|17min|15min|2min|11min|
+|1|2|22min|12min|8min|27min|
+|2|3|5min|9min|5min|5min|
+|2|4|19min|8min|7min|-|
+|3|5|28min|11min|12min|-|
+
+## ANÁLISIS DE REQUISITOS
+|Identificador|Nombre|Descripción|
+| ------------- | ------------- |------------- |
+|RF000|Eventos<br>inesperados | Capturar las distintas sucesiones de eventos inesperados |
+|RF001|Gestionar<br> llamadas |Controlar las llamadas realizadas por los diferentes tipos de emergencias  |
+|RF001.1|Identificar<br> llamadas<br> entrantes | Su función consiste en la identificar las llamadas entrantes tanto si son externas como si son internas |
+|RF001.1.1|Gestionar<br> Incidencias<br> internas | Trata de resolver la incidencia interna en el sistema previamente identificada, en caso contrario lo comunicará conllevando a una solución inmediata si es posible |
+|RF001.2|Llamadas<br> simultáneas |Recibe una cola de llamadas en un rango variable entre 15 y 20 llamadas simultáneas al centro de emergencias  |
+|RF001.3|Distribución de<br> llamadas |Se pasarán las llamadas a los operadores disponibles en ese momento  |
+|RF001.4|Reproducción de<br> llamadas | Muestra en un monitor el número identificado previamente por el identificador y la voz de la llamada |
+|RF002|Gestión recursos<br> activos |Controla ambulancias bomberos, policías y unidades militares incluyendo los recursos necesarios para la emergencia.  |
+|RF002.1|Mejorar ruta | Calcula las rutas más rápidas para que las unidades lleguen al punto de emergencias lo más rápido posible desde las instalaciones como punto de partida.  |
+|RF002.2|Preasignación |Existe una unidad de preasignación de recursos activos para cada una de las unidades activas de cada emergencia  |
+|RF003|Monitorización<br> emergencias |Monitoriza los activos en curso (emergencia videovigilancia y comunicaciones)  |
+|RF004|Videovigilancia<br> urbana |Video vigilancia urbInteractuar usando una BD afín a poder acceder, enviar, recibir y consultar los datos internos del SCE para diferentes interacciones necesarias involucrando la diferenciación de los diferentes lugares ana mediante cámaras remotas que transmiten video mediante antenas de móvil/cableado urbano al sistema de emergencias en curInteractuar usando una BD afín a poder acceder, enviar, recibir y consultar los datos internos del SCE para diferentes interacciones necesarias involucrando la diferenciación de los diferentes lugares o y en el amplio abanico de instalaciones del complejo de emergencia  |
+|RF005|Acceder a las<br> unidades activas |Interactuar usando una BD afín a poder acceder, enviar, recibir y consultar los datos internos del SCE para diferentes interacciones necesarias involucrando la diferenciación de los diferentes lugares  |
+|RF006|Login | Facilita entrar con su perfil específico (Administrador del sistema, operarios de emergencias, operarios de unidades activas (ambulancias, helicópteros)) cuyos datos de información están actualizados en tiempo real |
+|RF007|Sensores | Para detectar los eventos inesperados incendios) y que transmiten información vía radio a un centro de control remoto el cual envía un SMS y una alerta al sistema de emergencias como por ejemplo como sería el caso del detector de incendios |
+|RF008|Priorización|Sirve para filtrar las emergencias y así jerarquizar cuales son más importantes que otras para que, en caso de que no haya operadores o nodos funcionales suficientes, se identifiquen las emergencias más prioritarias |
+|RF009|Insuficientes<br> nodos funcionales | En caso de que no haya operadores suficientes poder atender las diferentes peticiones de los usuarios, por ejemplo, estructuración en temáticas de las posibles peticiones por parte de los usuarios de forma automática para así satisfacer sus peticiones, en caso de que el nodo funcional no pueda solucionarlo se le conectara con un operador lo antes posible. |
+|RF010|Comunicación <br>cifrada | Garantiza la seguridad de comunicación entre organismos de defensa y del ejército a nivel tanto nacional como internacional. Existen comunicaciones cifradas para posibilitar la comunicación con unidades de policía y la unidad militar de emergencias (UME) por medio de radio y canales concretos |
+|RF011|Traducción | Permite la traducción textual simultánea en tiempo real para emergencias que afectan a países cercanos |
+|RF012|Subscripción | Facilitar la subscripción de los usuarios a noticias generadas por sucesos en tiempo real |
+|RF012.1|Actualización de<br> información | Esta información tiene que estar siempre actualizada para los diferentes tipos de usuario |
+
+
 ## ITERACIÓN 1
 
 #### ADD-00:
@@ -13,7 +49,7 @@
 | Pros Opciones | - Detectan eventos inesperados<br> - Alerta al sistema de emergencias  |
 | Cons Opciones | - Alto y continuo mantenimiento<br> - Posibilidad de fallos y ruptura  |
 | Link to other decisions | ADD-00, ADD-01, ADD-02, ADD-03, ADD-04, ADD-05, ADD-06,<br> ADD-07, ADD-08, ADD-09, ADD-10 |
-| Link to architecture artifacts | Arquitectura por eventos (observer)  |
+| Link to architecture artifacts | UML iteración 1  |
 
 
 
@@ -30,7 +66,7 @@
 | Pros Opciones | - Engloba el amplio abanico de subsistemas<br> anidados  en lo referente a la gestión de llamadas<br> - Gestión ordenada<br> - Fácil escalado<br> - La generalización proporciona optimización<br> - Fácil administración y acceso  entre los subsistemas adheridos |
 | Cons Opciones | - Menos particularización<BR> - más lento por acceso  |
 | Link to other decisions | ADD-00, ADD-02, ADD-03, ADD-09, ADD-07,  |
-| Link to architecture artifacts | Arquitectura por eventos (observer) |
+| Link to architecture artifacts | UML iteración 2 (Sistema de procesamiento) |
   
 #### UML
 
@@ -59,6 +95,7 @@
 | Pros Opciones  | - Identificación inmediata de las llamadas<br> - Posible solución de una incidencia rápidamente<br> - Resolución de conflictos internos no conocidos<br> - Visualización identificada con voz de la llamada correspondiente  |
 | Cons Opciones | - Amplia variedad de identificadores con resultante confusión |
 | Link to other decisions | ADD-00, ADD-01 |
+| Link to architecture artifacts | UML iteración 2 (Sistema de procesamiento) |
 
 #### ADD-03:
 
@@ -72,6 +109,7 @@
 | Pros Opciones | - Control del personal  necesario en cada momento de<br> cierta emergencia.<br> - Rapidez a la hora de facilitar los recursos puesto que<br> son pre asignados con antelación |
 | Cons Opciones | - Posibilidad de recursos inactivos puesto que al estar<br> asignados una cantidad mínima de personal,<br> algunos no ejercen |
 | Link to other decisions | ADD-00, ADD-01, ADD-04, ADD-07  |
+| Link to architecture artifacts | UML iteración 2 (Sistema de procesamiento) |
 
 #### ADD-04:
 
@@ -87,6 +125,7 @@
 | Pros Opciones | Opcion1:<br> - Mayor rapidez para llegar al lugar<br> - Tráfico en tiempo real<br><br>Opcion2:<br>- Económico |
 | Cons Opciones | Opcion1:<br>- Algoritmo complejo<br>- Requiere de personal especializado para<br> desarrollarlo, optimizarlo y mantenerlo con continuidad<br>- Precio elevado<br><br>Opción2:<br>- Menos personalizable |
 | Link to other decisions | DD-00, ADD-03  |
+| Link to architecture artifacts | UML iteración 2 (Sistema de procesamiento) |
 
 #### UML
 
@@ -106,6 +145,7 @@
 | Pros Opciones | - Control visual de los activos<br>- Incremento de seguridad en las instalaciones |
 | Cons Opciones | - Pueden ser hackeadas<br>- Posible robo de privacidad<br>- Mantenimiento económicamente elevado |
 | Link to other decisions | DD-00, ADD-03 |
+| Link to architecture artifacts | UML iteración 3 (Sistema de Recepción) |
 
 #### UML
 
@@ -124,8 +164,8 @@
 | Requirements (decision drivers)  | - RF006 Login |
 | Pros Opciones | - Acceso a datos específicos para el usuario<br>- Adaptación al entorno digital<br>- Mejora de la experiencia de usuario |
 | Cons Opciones | - Necesidad de una base de datos para<br> almacenar los usuarios almacenados |
-| Link to other decisions | DD-00, ADD-03 |
-| Link to architecture artifacts | PAQUETE: (Arquitectura por eventos (observer)) |
+| Link to other decisions | ADD-00, ADD-03 |
+| Link to architecture artifacts | UML iteración 4 (Sistema de Gestión y Sistema de Procesamiento) |
 
 #### ADD-07:
 
@@ -139,7 +179,8 @@
 | Decision outcome (options selected)  | Creación de nodos funcionales |
 | Pros Opciones | Nodos funcionales<br>- Proporciona una estrategia de resolución de conflicto<br> en el acceso  de operadores aun no estando los<br> operadores disponibles, permitiendo la respuesta de las<br> peticiones de los usuarios<br>- Aumentando la entrada de llamadas.<br><br>Contratación de  más operadores<br> - Más atención personalizada<br> - Mayor disponibilidad prestada a los usuarios<br> - Cercanía al ususario<br><br>Inclusión de la Inteligencia Artificial(IA) con Machine <br>Learning<br>- Constante aprendizaje a cerca de las peticiones, <br>consecuentemente una mejor aplicación a futuras llamadas<br>- Disminución de personal |
 | Cons Opciones | Nodos funcionales<br>- No hay atención personalizada<br>- Hay un límite de respuestas, correspondiente a la<br> capacidad del servidor<br><br>Contratación de  más operadores<br>- Elevar el coste<br>- Proporcionar mayor espacio físico(instalaciones)<br>- Mayor cantidad de nodos<br><br>Inclusión de la Inteligencia Artificial(IA) con Machine <br>Learning<br>- Elevado coste<br>- Mantenimiento<br>- Personal especializado para desarrollarlo o personalizarlo |
-| Link to architecture artifacts | Arquitectura por eventos (observer) |
+| Link to other decisions | ADD-00, ADD-01, ADD-02, ADD-03, ADD-09 |
+| Link to architecture artifacts | UML iteración 4 (Sistema de Procesamiento, específicamente en “Gestor de Llamadas” el método “Operadoresocupados(Llamada)”) |
 
 #### UML
 
@@ -190,7 +231,7 @@
 | Requirements (decision drivers)  | - RF012 Subscripción<br>- RF012.1Actualización de información |
 | Pros Opciones | - Distribución de información a los usuarios<br>- Información actualizada en tiempo real<br>- Fácil, simple ordenado<br>- Accesible  |
 | Cons Opciones | - Dependencia de la conexión a internet<br>- Personal técnico encargado de la elaboración de las noticias |
-| Link to other decisions | ADD-00, ADD ADD-05, ADD-06,ADD-09 |
+| Link to other decisions | ADD-00, ADD-03, ADD ADD-05, ADD-06,ADD-09 |
 | Link to architecture artifacts | UML iteración 5 (Sistema de Gestión) |
 
 
