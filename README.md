@@ -16,6 +16,7 @@
 | Link to architecture artifacts | Arquitectura por eventos (observer)  |
 
 
+
 #### ADD-01:
 
 | Short title of decision  | Gestor de llamadas |
@@ -41,7 +42,7 @@
 
 <img src="UML/AD2.png">
 
-<img src="UML/AD2.png">
+<img src="UML/AD3.png">
 
 
 ## ITERACIÓN 2
@@ -123,7 +124,7 @@
 | Requirements (decision drivers)  | - RF006 Login |
 | Pros Opciones | - Acceso a datos específicos para el usuario<br>- Adaptación al entorno digital<br>- Mejora de la experiencia de usuario |
 | Cons Opciones | - Necesidad de una base de datos para<br> almacenar los usuarios almacenados |
-| Link to other decisions | DD-00, ADD-04 |
+| Link to other decisions | DD-00, ADD-03 |
 | Link to architecture artifacts | PAQUETE: (Arquitectura por eventos (observer)) |
 
 #### ADD-07:
