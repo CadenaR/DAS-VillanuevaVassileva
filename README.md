@@ -93,7 +93,7 @@
 | Date | 22/10/2019 |
 | Creator of the decision | Borja Castro, Deborah Villanueva |
 | Status | Accepted |
-| Requirements (decision drivers)  | RF004 Video-vigilancia |
+| Requirements (decision drivers)  | - RF004 Video-vigilancia |
 | Pros Opciones | - Control visual de los activos<br>- Incremento de seguridad en las instalaciones |
 | Cons Opciones | - Pueden ser hackeadas<br>- Posible robo de privacidad<br>- Mantenimiento económicamente elevado |
 
@@ -101,3 +101,36 @@
 
 <img src="UML/iteracion3.png">
 
+## ITERACIÓN 4
+
+#### ADD-06:
+
+| Short title of decision  | Acceso a perfil |
+| ------------- | ------------- |
+| ID |  ADD-06 |
+| Date | 23/10/19 |
+| Creator of the decision | Borja Castro, Deborah Villanueva |
+| Status | Accepted |
+| Requirements (decision drivers)  | - RF006 Login |
+| Pros Opciones | - Acceso a datos específicos para el usuario<br>- Adaptación al entorno digital<br>- Mejora de la experiencia de usuario |
+| Cons Opciones | - Necesidad de una base de datos para<br> almacenar los usuarios almacenados |
+| Link to architecture artifacts | PAQUETE: (Arquitectura por eventos (observer)) |
+
+#### ADD-07:
+
+| Short title of decision  | Creación de nodos funcionales |
+| ------------- | ------------- |
+| ID |  ADD-07 |
+| Date | 23/10/19 |
+| Creator of the decision | Borja Castro, Deborah Villanueva |
+| Status | Accepted |
+| Requirements (decision drivers)  | - RF009- Insuficientes nodos funcionales |
+| Decision outcome (options selected)  | Creación de nodos funcionales |
+| Pros Opciones | Nodos funcionales<br>- Proporciona una estrategia de resolución de conflicto<br> en el acceso  de operadores aun no estando los<br> operadores disponibles, permitiendo la respuesta de las<br> peticiones de los usuarios<br>- Aumentando la entrada de llamadas.<br><br>Contratación de  más operadores<br> - Más atención personalizada<br> - Mayor disponibilidad prestada a los usuarios<br> - Cercanía al ususario<br><br>Inclusión de la Inteligencia Artificial(IA) con Machine <br>Learning<br>- Constante aprendizaje a cerca de las peticiones, <br>consecuentemente una mejor aplicación a futuras llamadas<br>- Disminución de personal |
+| Cons Opciones | Nodos funcionales<br>- No hay atención personalizada<br>- Hay un límite de respuestas, correspondiente a la<br> capacidad del servidor<br><br>Contratación de  más operadores<br>- Elevar el coste<br>- Proporcionar mayor espacio físico(instalaciones)<br>- Mayor cantidad de nodos<br><br>Inclusión de la Inteligencia Artificial(IA) con Machine <br>Learning<br>- Elevado coste<br>- Mantenimiento<br>- Personal especializado para desarrollarlo o personalizarlo |
+| Link to other decisions |  |
+| Link to architecture artifacts | Arquitectura por eventos (observer) |
+
+#### UML
+
+<img src="UML/iteracion4.png">
