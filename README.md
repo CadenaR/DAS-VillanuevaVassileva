@@ -35,6 +35,11 @@
 
 <img src="UML/iteracion1.png"> 
 
+#### ADmentor
+<img src="UML/AD1.png">
+<img src="UML/AD2.png">
+<img src="UML/AD2.png">
+
 
 ## ITERACIÓN 2
 
@@ -163,8 +168,8 @@
 | Creator of the decision | Borja Castro, Deborah Villanueva |
 | Status | Accepted |
 | Requirements (decision drivers)  | - RF011. Traducción |
-| Alternative decisions (options) | Traductor de terceros terceros |
-| Decision outcome (options selected)  | Traductor de terceros terceros |
+| Alternative decisions (options) | Traductor propio |
+| Decision outcome (options selected)  | Traductor de terceros |
 | Pros Opciones | Traductor propio:<br>- Comunicación internacional<br>- Traducción precisa a profesionales en<br> lengua materna<br>- Aprendizaje de termionología <br>especialista(tecnicismos)<br><br>Traductor de terceros:<br>- Mas barato |
 | Cons Opciones | Traductor propio:<br>- Posible pérdida de información<br>- Posible malinterpretación<br><br>Traductor de terceros:<br>- Difícil modificación |
 | Link to other decisions | ADD-00, ADD-03, ADD-10 |
