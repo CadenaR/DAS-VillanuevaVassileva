@@ -38,11 +38,11 @@
 
 #### ADmentor
 
-<img src="UML/AD1.png">
+<img src="UML/ADMentor1.png">
 
-<img src="UML/AD2.png">
+<img src="UML/ADMentor2.png">
 
-<img src="UML/AD3.png">
+<img src="UML/ADMentor3.png">
 
 
 ## ITERACIÓN 2
