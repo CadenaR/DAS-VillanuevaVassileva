@@ -12,7 +12,7 @@
 | Decision outcome (options selected)  | Estilo por eventos |
 | Pros Opciones | - Detectan eventos inesperados<br> - Alerta al sistema de emergencias  |
 | Cons Opciones | - Alto y continuo mantenimiento<br> - Posibilidad de fallos y ruptura  |
-| Link to other decisions | ADD-00, ADD-01, ADD-02, ADD-03, ADD-04, ADD-05, ADD-06,<br> ADD-07, ADD-08, ADD-09, ADD-10, ADD-11 |
+| Link to other decisions | ADD-00, ADD-01, ADD-02, ADD-03, ADD-04, ADD-05, ADD-06,<br> ADD-07, ADD-08, ADD-09, ADD-10 |
 | Link to architecture artifacts | Arquitectura por eventos (observer)  |
 
 
@@ -28,7 +28,7 @@
 | Decision outcome (options selected)  | Gestor de llamadas |
 | Pros Opciones | - Engloba el amplio abanico de subsistemas<br> anidados  en lo referente a la gestión de llamadas<br> - Gestión ordenada<br> - Fácil escalado<br> - La generalización proporciona optimización<br> - Fácil administración y acceso  entre los subsistemas adheridos |
 | Cons Opciones | - Menos particularización<BR> - más lento por acceso  |
-| Link to other decisions | ADD-02,ADD-03,ADD06 |
+| Link to other decisions | ADD-00, ADD-02, ADD-03, ADD-09, ADD-07,  |
 | Link to architecture artifacts | Arquitectura por eventos (observer) |
   
 #### UML
@@ -49,7 +49,7 @@
 | Requirements (decision drivers)  | - R001.1  Identificar de llamadas entrantes<br> - RF001.1.1 Gestionar incidencias internas<br> - RF001.4 Reproducción de llamadas   |
 | Pros Opciones  | - Identificación inmediata de las llamadas<br> - Posible solución de una incidencia rápidamente<br> - Resolución de conflictos internos no conocidos<br> - Visualización identificada con voz de la llamada correspondiente  |
 | Cons Opciones | - Amplia variedad de identificadores con resultante confusión |
-| Link to other decisions | ADD-01, ADD-06 |
+| Link to other decisions | ADD-00, ADD-01 |
 
 #### ADD-03:
 
@@ -62,7 +62,7 @@
 | Requirements (decision drivers)  | - RF002: Gestión de recursos activos<br>- RF002.2 Preasignación<br> - F003 Monitorización emergencias|
 | Pros Opciones | - Control del personal  necesario en cada momento de<br> cierta emergencia.<br> - Rapidez a la hora de facilitar los recursos puesto que<br> son pre asignados con antelación |
 | Cons Opciones | - Posibilidad de recursos inactivos puesto que al estar<br> asignados una cantidad mínima de personal,<br> algunos no ejercen |
-| Link to other decisions | ADD-01,ADD02, ADD06 |
+| Link to other decisions | ADD-00, ADD-01, ADD-04, ADD-07  |
 
 #### ADD-04:
 
@@ -77,7 +77,7 @@
 | Decision outcome (options selected)  | Optimización de ruta |
 | Pros Opciones | Opcion1:<br> - Mayor rapidez para llegar al lugar<br> - Tráfico en tiempo real<br><br>Opcion2:<br>- Económico |
 | Cons Opciones | Opcion1:<br>- Algoritmo complejo<br>- Requiere de personal especializado para<br> desarrollarlo, optimizarlo y mantenerlo con continuidad<br>- Precio elevado<br><br>Opción2:<br>- Menos personalizable |
-| Link to other decisions | ADD-03 |
+| Link to other decisions | DD-00, ADD-03  |
 
 #### UML
 
@@ -96,6 +96,7 @@
 | Requirements (decision drivers)  | - RF004 Video-vigilancia |
 | Pros Opciones | - Control visual de los activos<br>- Incremento de seguridad en las instalaciones |
 | Cons Opciones | - Pueden ser hackeadas<br>- Posible robo de privacidad<br>- Mantenimiento económicamente elevado |
+| Link to other decisions | DD-00, ADD-03 |
 
 #### UML
 
@@ -114,6 +115,7 @@
 | Requirements (decision drivers)  | - RF006 Login |
 | Pros Opciones | - Acceso a datos específicos para el usuario<br>- Adaptación al entorno digital<br>- Mejora de la experiencia de usuario |
 | Cons Opciones | - Necesidad de una base de datos para<br> almacenar los usuarios almacenados |
+| Link to other decisions | DD-00, ADD-04 |
 | Link to architecture artifacts | PAQUETE: (Arquitectura por eventos (observer)) |
 
 #### ADD-07:
@@ -128,7 +130,6 @@
 | Decision outcome (options selected)  | Creación de nodos funcionales |
 | Pros Opciones | Nodos funcionales<br>- Proporciona una estrategia de resolución de conflicto<br> en el acceso  de operadores aun no estando los<br> operadores disponibles, permitiendo la respuesta de las<br> peticiones de los usuarios<br>- Aumentando la entrada de llamadas.<br><br>Contratación de  más operadores<br> - Más atención personalizada<br> - Mayor disponibilidad prestada a los usuarios<br> - Cercanía al ususario<br><br>Inclusión de la Inteligencia Artificial(IA) con Machine <br>Learning<br>- Constante aprendizaje a cerca de las peticiones, <br>consecuentemente una mejor aplicación a futuras llamadas<br>- Disminución de personal |
 | Cons Opciones | Nodos funcionales<br>- No hay atención personalizada<br>- Hay un límite de respuestas, correspondiente a la<br> capacidad del servidor<br><br>Contratación de  más operadores<br>- Elevar el coste<br>- Proporcionar mayor espacio físico(instalaciones)<br>- Mayor cantidad de nodos<br><br>Inclusión de la Inteligencia Artificial(IA) con Machine <br>Learning<br>- Elevado coste<br>- Mantenimiento<br>- Personal especializado para desarrollarlo o personalizarlo |
-| Link to other decisions |  |
 | Link to architecture artifacts | Arquitectura por eventos (observer) |
 
 #### UML
@@ -150,7 +151,7 @@
 | Decision outcome (options selected)  | Cifrado propio de comunicación |
 | Pros Opciones | Cifrado propio de comunicación<br>- Comunicación adaptada a organismos de defensa<br>- Privacidad gubernamental<br>- Seguridad de mensajes privados<br><br>Encriptación de terceros<br>- Uso de claves ya proporcionadas<br>- Más económico |
 | Cons Opciones | Cifrado propio de comunicación<br>- Actualización constante en el código de <br>encriptación<br>- Crear el propio algoritmo de cifrado y la clave<br> correspondiente para descifrarlo<br>- Personal especializado<br><br>Encriptación de terceros<br>- Poca seguridad debido a la clave compartida |
-| Link to other decisions | ADD00, ADD06, ADD03 |
+| Link to other decisions | ADD-00, ADD-06, ADD-03  |
 | Link to architecture artifacts | UML iteración 5 (Sistema de Gestión)  |
 
 #### ADD-09:
@@ -166,7 +167,7 @@
 | Decision outcome (options selected)  | Traductor de terceros terceros |
 | Pros Opciones | Traductor propio:<br>- Comunicación internacional<br>- Traducción precisa a profesionales en<br> lengua materna<br>- Aprendizaje de termionología <br>especialista(tecnicismos)<br><br>Traductor de terceros:<br>- Mas barato |
 | Cons Opciones | Traductor propio:<br>- Posible pérdida de información<br>- Posible malinterpretación<br><br>Traductor de terceros:<br>- Difícil modificación |
-| Link to other decisions | ADD00, ADD03, ADD10 |
+| Link to other decisions | ADD-00, ADD-03, ADD-10 |
 | Link to architecture artifacts | UML iteración 5 (Sistema de Gestión)|
 
 #### ADD-10:
@@ -180,7 +181,7 @@
 | Requirements (decision drivers)  | - RF012 Subscripción<br>- RF012.1Actualización de información |
 | Pros Opciones | - Distribución de información a los usuarios<br>- Información actualizada en tiempo real<br>- Fácil, simple ordenado<br>- Accesible  |
 | Cons Opciones | - Dependencia de la conexión a internet<br>- Personal técnico encargado de la elaboración de las noticias |
-| Link to other decisions | ADD00, ADD ADD05, ADD06,ADD09 |
+| Link to other decisions | ADD-00, ADD ADD-05, ADD-06,ADD-09 |
 | Link to architecture artifacts | UML iteración 5 (Sistema de Gestión) |
 
 
